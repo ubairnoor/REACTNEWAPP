@@ -10,6 +10,7 @@ import React from 'react';
 import type {Node} from 'react';
 import Login from './components/Login'
 import Home from './components/Home';
+import HomeState from './components/HomeState';
 import {
   SafeAreaView,
   ScrollView,
@@ -39,6 +40,7 @@ const App = () => {
    <Text>Hello React Native</Text>
    <Login/>
    <Home data = {data} />
+   <HomeState/>
  </View>
   );
 };
