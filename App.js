@@ -37,7 +37,7 @@ const App = () => {
 
   return (
  <View>
-   <Text style={styles.red}>Hello React Native</Text>
+   <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
    <Login/>
    <Home data = {data} />
    <HomeState/>
@@ -51,6 +51,10 @@ const styles = StyleSheet.create({
     color:'red',
    
   },
+  fonts:{
+    fontSize:30,
+    fontWeight:'bold'
+  }
 
 
 }
