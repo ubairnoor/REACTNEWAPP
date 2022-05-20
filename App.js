@@ -9,6 +9,7 @@
 import React from 'react';
 import type {Node} from 'react';
 import Login from './components/Login'
+import Home from './components/Home';
 import {
   SafeAreaView,
   ScrollView,
@@ -30,12 +31,14 @@ import {
 
 
 const App = () => {
+  const data = "Email id"
 
 
   return (
  <View>
    <Text>Hello React Native</Text>
    <Login/>
+   <Home data = {data} />
  </View>
   );
 };
