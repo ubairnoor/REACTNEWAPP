@@ -38,6 +38,8 @@ const App = () => {
   return (
  <View>
    <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
+   <Text style={[styles.fonts]}>Hello React Native</Text>
+
    <Login/>
    <Home data = {data} />
    <HomeState/>
