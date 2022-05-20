@@ -10,7 +10,7 @@ class  HomeState extends React.Component{
         }
     }
     changeState(){
-        this.setState({data:"Data Changed"})
+        this.setState({data:"Data Changed"});
     }
   render(){
     return (

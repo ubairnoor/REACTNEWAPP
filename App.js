@@ -37,7 +37,7 @@ const App = () => {
 
   return (
  <View>
-   <Text>Hello React Native</Text>
+   <Text style={{color:'red'}}>Hello React Native</Text>
    <Login/>
    <Home data = {data} />
    <HomeState/>
