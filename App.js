@@ -37,7 +37,7 @@ const App = () => {
 
   return (
  <View>
-   <Text style={{color:'red'}}>Hello React Native</Text>
+   <Text style={styles.red}>Hello React Native</Text>
    <Login/>
    <Home data = {data} />
    <HomeState/>
@@ -45,4 +45,14 @@ const App = () => {
   );
 };
 
+const styles = StyleSheet.create({
+  red:{
+   
+    color:'red',
+   
+  },
+
+
+}
+)
 export default App;
