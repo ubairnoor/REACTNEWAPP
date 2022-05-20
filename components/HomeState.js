@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text} from 'react-native';
+import {View, Text,Button} from 'react-native';
 
 class  HomeState extends React.Component{
     constructor()
@@ -9,10 +9,14 @@ class  HomeState extends React.Component{
             data:"Some App Data"
         }
     }
+    changeState(){
+        this.setState({data:"Data Changed"})
+    }
   render(){
     return (
         <View>
             <Text>{this.state.data}</Text>
+            <Button title="Press me" onPress={()=>{this.changeState()}}/>
         </View>
     )
   }
