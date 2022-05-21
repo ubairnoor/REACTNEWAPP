@@ -11,6 +11,7 @@ import type {Node} from 'react';
 import Login from './components/Login'
 import Home from './components/Home';
 import HomeState from './components/HomeState';
+import InputForm from './components/InputForm';
 import {
   SafeAreaView,
   ScrollView,
@@ -39,10 +40,12 @@ const App = () => {
  <View>
    <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
    <Text style={[styles.fonts]}>Hello React Native</Text>
+   <Text></Text>
 
    <Login/>
    <Home data = {data} />
    <HomeState/>
+   <InputForm/>
  </View>
   );
 };
@@ -57,8 +60,6 @@ const styles = StyleSheet.create({
     fontSize:30,
     fontWeight:'bold'
   }
-
-
 }
 )
 export default App;
