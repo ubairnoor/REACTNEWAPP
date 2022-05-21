@@ -40,8 +40,8 @@ const App = () => {
   return (
     //we face error in design the boxes in Right Direction
     // we will add FlexWrap property so that we can put the last box in below.
-
- <View style={{flex:1, flexWrap:'wrap',flexDirection:'row',alignItems:'flex-start'}}>
+//Justify Content is another prop which we will help to justify the content center ,space between,space evenly
+ <View style={{flex:1, flexWrap:'wrap', justifyContent:'space-between',flexDirection:'row',alignItems:'flex-start'}}>
  <View style={{width:100,height:100,backgroundColor:'yellow'}}></View>
  <View style={{width:100,height:100,backgroundColor:'red'}}></View>
  <View style={{width:100,height:100,backgroundColor:'green'}}></View>
