@@ -39,7 +39,7 @@ const App = () => {
 
   return (
  <View style={{flex:1}}>
- <View style={{flex:1,backgroundColor:'yellow'}}>
+ <View style={{flex:2,backgroundColor:'yellow'}}>
  {/* <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
    <Text style={[styles.fonts]}>Hello React Native</Text>
    <Text></Text>
