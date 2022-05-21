@@ -17,7 +17,7 @@ class InputForm extends React.Component{
                     {this.state.name}
 
                 </Text>
-                <TextInput placeholder={"Enter Your Name"} 
+                <TextInput style={{backgroundColor:'grey',color:'white',fontSize:20}} placeholder={"Enter Your Name"} 
                 onChangeText={(e)=>{this.setState({name:e})}} ></TextInput>
                 <Button title="submit" onPress={()=>{alert(this.state.name)}}></Button>
             </View>
