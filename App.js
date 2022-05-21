@@ -38,7 +38,7 @@ const App = () => {
 
 
   return (
- <View style={{flex:1}}>
+ <View style={{flex:1, flexDirection:'column-reverse'}}>
  <View style={{flex:1,backgroundColor:'yellow'}}></View>
  <View style={{flex:1,backgroundColor:'red'}}></View>
  <View style={{flex:2,backgroundColor:'green'}}></View>
