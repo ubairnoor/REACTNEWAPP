@@ -38,10 +38,13 @@ const App = () => {
 
 
   return (
- <View style={{flex:1, flexDirection:'column',alignItems:'center'}}>
- <View style={{flex:1,width:100,height:100,backgroundColor:'yellow'}}></View>
- <View style={{flex:1,width:100,height:100,backgroundColor:'red'}}></View>
- <View style={{flex:2,width:100,height:100,backgroundColor:'green'}}></View>
+ <View style={{flex:1, flexDirection:'row',alignItems:'flex-start'}}>
+ <View style={{width:100,height:100,backgroundColor:'yellow'}}></View>
+ <View style={{width:100,height:100,backgroundColor:'red'}}></View>
+ <View style={{width:100,height:100,backgroundColor:'green'}}></View>
+ <View style={{width:100,height:100,backgroundColor:'orange'}}></View>
+ <View style={{width:100,height:100,backgroundColor:'blue'}}></View>
+
 
 
  {/* <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
