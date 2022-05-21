@@ -38,10 +38,10 @@ const App = () => {
 
 
   return (
- <View style={{flex:1, flexDirection:'column-reverse'}}>
- <View style={{flex:1,backgroundColor:'yellow'}}></View>
- <View style={{flex:1,backgroundColor:'red'}}></View>
- <View style={{flex:2,backgroundColor:'green'}}></View>
+ <View style={{flex:1, flexDirection:'column',alignItems:'center'}}>
+ <View style={{flex:1,width:100,backgroundColor:'yellow'}}></View>
+ <View style={{flex:1,width:100,backgroundColor:'red'}}></View>
+ <View style={{flex:2,width:100,backgroundColor:'green'}}></View>
 
 
  {/* <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
