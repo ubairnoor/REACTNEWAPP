@@ -38,15 +38,15 @@ const App = () => {
 
 
   return (
- <View style={{flex:1, flexDirection:'row',alignItems:'flex-start'}}>
+    //we face error in design the boxes in Right Direction
+    // we will add FlexWrap property so that we can put the last box in below.
+
+ <View style={{flex:1, flexWrap:'wrap',flexDirection:'row',alignItems:'flex-start'}}>
  <View style={{width:100,height:100,backgroundColor:'yellow'}}></View>
  <View style={{width:100,height:100,backgroundColor:'red'}}></View>
  <View style={{width:100,height:100,backgroundColor:'green'}}></View>
  <View style={{width:100,height:100,backgroundColor:'orange'}}></View>
  <View style={{width:100,height:100,backgroundColor:'blue'}}></View>
-
-
-
  {/* <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
    <Text style={[styles.fonts]}>Hello React Native</Text>
    <Text></Text>
