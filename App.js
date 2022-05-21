@@ -12,6 +12,7 @@ import Login from './components/Login'
 import Home from './components/Home';
 import HomeState from './components/HomeState';
 import InputForm from './components/InputForm';
+import FlexBox from './components/FlexBox';
 import {
   SafeAreaView,
   ScrollView,
@@ -37,15 +38,21 @@ const App = () => {
 
 
   return (
- <View>
-   <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
+ <View style={{flex:1}}>
+ <View style={{flex:1,backgroundColor:'yellow'}}>
+ {/* <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
    <Text style={[styles.fonts]}>Hello React Native</Text>
    <Text></Text>
-
+   <FlexBox/>
    <Login/>
    <Home data = {data} />
    <HomeState/>
-   <InputForm/>
+   <InputForm/> */}
+ </View>
+ <View style={{flex:1}}>
+   <View style={{flex:1,backgroundColor:'red'}}></View>
+ </View>
+
  </View>
   );
 };
