@@ -39,7 +39,11 @@ const App = () => {
 
   return (
  <View style={{flex:1}}>
- <View style={{flex:5,backgroundColor:'yellow'}}>
+ <View style={{flex:1,backgroundColor:'yellow'}}></View>
+ <View style={{flex:1,backgroundColor:'red'}}></View>
+ <View style={{flex:2,backgroundColor:'green'}}></View>
+
+
  {/* <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
    <Text style={[styles.fonts]}>Hello React Native</Text>
    <Text></Text>
@@ -48,11 +52,9 @@ const App = () => {
    <Home data = {data} />
    <HomeState/>
    <InputForm/> */}
- </View>
- <View style={{flex:1}}>
-   <View style={{flex:1,backgroundColor:'red'}}></View>
- </View>
 
+
+   
  </View>
   );
 };
