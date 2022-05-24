@@ -7,14 +7,15 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
+import type { Node } from 'react';
 import Login from './components/Login'
 import Home from './components/Home';
 import HomeState from './components/HomeState';
 import InputForm from './components/InputForm';
 import FlexBox from './components/FlexBox';
-import {createAppContainer} from 'react-navigation';
-import { createStackNavigator} from 'react-navigation-stack'
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack'
+
 
 import {
   SafeAreaView,
@@ -24,6 +25,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Button
 } from 'react-native';
 
 import {
@@ -36,51 +38,68 @@ import {
 
 
 
-const App = () => {
+const App = (props) => {
   const data = "Email id"
 
 
   return (
     //we face error in design the boxes in Right Direction
     // we will add FlexWrap property so that we can put the last box in below.
-//Justify Content is another prop which we will help to justify the content center ,space between,space evenly
- <View style={{flex:1, flexWrap:'wrap', justifyContent:'space-between',flexDirection:'row',alignItems:'flex-start'}}>
- <View style={{width:100,height:100,backgroundColor:'yellow'}}></View>
- <View style={{width:100,height:100,backgroundColor:'red'}}></View>
- <View style={{width:100,height:100,backgroundColor:'green'}}></View>
- <View style={{width:100,height:100,backgroundColor:'orange'}}></View>
- <View style={{width:100,height:100,backgroundColor:'blue'}}></View>
- {/* <Text style={[styles.red,styles.fonts]}>Hello React Native</Text>
-   <Text style={[styles.fonts]}>Hello React Native</Text>
-   <Text></Text>
-   <FlexBox/>
-   <Login/>
-   <Home data = {data} />
-   <HomeState/>
-   <InputForm/> */}
+    //Justify Content is another prop which we will help to justify the content center ,space between,space evenly
+    <View style={{ flex: 1, flexWrap: 'wrap', justifyContent: 'space-between', flexDirection: 'row', alignItems: 'flex-start' }}>
+
+      <Text style={{ fontSize: 90 }}>Home Screen </Text>
+      <Button title='Profile' onPress={()=>{props.navigation.navigate("Myprofile")}}/>
+      <Button title='About' onPress={()=>{props.navigation.navigate("About")}}/>
 
 
-   
- </View>
+
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  red:{
-   
-    color:'red',
-   
+  red: {
+
+    color: 'red',
+
   },
-  fonts:{
-    fontSize:30,
-    fontWeight:'bold'
+  fonts: {
+    fontSize: 30,
+    fontWeight: 'bold'
   }
 }
 )
 
+function Profile(props) {
+  console.log(props)
+  return (
+    <View>
+    <Text style={{ fontSize: 90 }}>Profile Screen </Text>
+
+       <Button title='Home' onPress={()=>{props.navigation.navigate("Home")}}/>
+    </View>
+    
+  )
+}
+
+function About (props){
+  return (
+    <View>
+      <Text style={{fontSize: 80}}> About Us</Text>
+      <Button title='Profile' onPress={()=>{props.navigation.navigate("Myprofile")}}/>
+    </View>
+  )
+}
 const AppNavigator = createStackNavigator({
-  Home:{
-    screen:App
+  Home: {
+    screen: App,
+  },
+  Myprofile: {
+    screen: Profile
+  },
+  About:{
+    screen:About
   }
 })
 
