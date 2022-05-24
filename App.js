@@ -13,6 +13,9 @@ import Home from './components/Home';
 import HomeState from './components/HomeState';
 import InputForm from './components/InputForm';
 import FlexBox from './components/FlexBox';
+import {createAppContainer} from 'react-navigation';
+import { createStackNavigator} from 'react-navigation-stack'
+
 import {
   SafeAreaView,
   ScrollView,
@@ -74,4 +77,11 @@ const styles = StyleSheet.create({
   }
 }
 )
-export default App;
+
+const AppNavigator = createStackNavigator({
+  Home:{
+    screen:App
+  }
+})
+
+export default createAppContainer(AppNavigator);
